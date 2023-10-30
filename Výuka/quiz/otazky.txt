@@ -1,0 +1,3 @@
+Ktere město je největší?;Brno;Praha;Olomouc;b
+Ktere město je studentské?;Brno;Praha;Olomouc;a
+Ktere město je sídlpo CPSS?;Brno;Praha;Olomouc;c
