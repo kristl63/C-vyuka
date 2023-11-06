@@ -34,6 +34,7 @@ int main() {
     pole1->otherField = pole2;
     printPole(pole1);
 
+    
     return 0;
 }
 
@@ -44,5 +45,17 @@ Pole* addNextPole(int value, Pole* pole) {
     pole->otherField = newPole;
     return newPole;
 }
- 
- 
+
+void delNextNode(Pole* pole) {
+    Pole* erased = pole->otherField;
+    pole->otherField = erased->otherField;
+    delete erased;
+}
+
+Pole* getPole(Pole* LL, int idx){
+    Pole* cur_node = LL;
+    for (int i = 0; i < idx; i++) {
+        cur_node = cur_node->otherField;
+    }
+    return cur_node;
+}

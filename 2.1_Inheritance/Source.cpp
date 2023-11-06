@@ -11,9 +11,9 @@ std::vector<std::string> StalyStav::allowedPrislunost = { "FVT","FVZ","FVL" };
 std::vector<std::string> Vojak::hodnosti = { "vojin", "svobodnik" };
 
 int main() {
-	VojenskyStalyStav vojstav;
+	// VojenskyStalyStav vojstav;
 
-	StalyStav stav = vojstav;
+	// StalyStav stav = vojstav;
 
-
+	StalyStav test = StalyStav("Pepa", "Omacka","111111/1111","FVZ");
 }
