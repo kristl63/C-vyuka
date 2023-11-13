@@ -24,7 +24,7 @@ int main()
     cout << "cols2: ";
     cin >> cols;
     Matrix matrix1=initMatrix(rows,cols);
-    print_2d_array(matrix);
+    print_2d_array(matrix1.matrix, rows, cols);
 
     //init array of pointers in dynamic memory to arrrays of integer
     int** array = new int* [rows];
@@ -47,7 +47,7 @@ int main()
     delete[] array;
     array = NULL;
 
-    return 0;
+    //return 0;
 }
 
 void print_2d_array(int** arr, int rows, int cols) {
